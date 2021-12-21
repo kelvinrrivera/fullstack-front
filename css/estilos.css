@@ -1,0 +1,38 @@
+body {
+    margin: 2% 5%;
+    font-family: verdana;
+}
+header img, header h1 {
+    display: inline-block;
+}
+h1 {
+    float: right;
+}
+label, input {
+    display: inline-block;
+}
+div#block1, div#block2, div#block3 {
+    display: block;
+    margin: 10px 20px;
+}
+select#tamaño, button {
+    font-size: 16px;
+    font-family: verdana;
+}
+div#datos-cliente {
+    background-color: #55ccff;
+    padding: 10px;
+    margin-top: 20px;
+}
+div#datos-pedido {
+    background-color:#40ccbb;
+    padding: 10px;
+    margin-top: 20px;
+}
+button {
+    margin-top: 20px;
+    background-color: #c53417;
+    color: white;
+    width: 120px;
+    height: 32px;
+}

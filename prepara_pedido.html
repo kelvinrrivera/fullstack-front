@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title>“Pizzas Full Stack</title>
+    <meta charset="UTF-8">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <header>
+        <img src="images/logo_pizza.jpg" alt="Logo Pizza">
+        <h1>Pizzas Full Stack</h1>
+    </header>
+
+    <form action="http://localhost:5000/pizza" method="post">
+        <div id="datos-cliente">
+            <h2>Datos del cliente</h2>
+                <div id="block1">
+                    <label onclick="console.log('lfname');" id="fname" for="fname">Nombre:</label>
+                    <input type="text" id="ifname" name="ifname" value="">
+                </div>
+                <div id="block1">
+                    <label onclick="console.log('llname');" id="lname" for="lname">Apellidos:</label>
+                    <input type="text" id="ilname" name="ilname" value="">
+                </div>
+                <div id="block1">
+                    <label id="ldate">Fecha de nacimiento:</label>
+                    <input type="date" name="idate" value="">
+                </div>
+                <div id="block1">
+                    <label id="ltel">Numero de teléfono:</label>
+                    <input type="tel" name="itel" value="">
+                </div>
+                <div id="block1">
+                    <label id="laddress">Dirección Postal:</label>
+                    <input type="text" name="iaddress" value="">
+                </div>
+        </div>
+            
+        <div id="datos-pedido">
+             <h2>Datos del pedido</h2>
+             <div id="block2">
+                <label id="ltamano">Tamaño de la pizza:</label>
+                <select id="stamano" name="tamano">
+                    <option id="pequena">Pequeña</option>
+                    <option id="mediana" selected>Mediana</option>
+                    <option id="grande">Grande</option>
+                </select>
+            </div>
+            
+            <div id="block3">
+                <label for="ing1">Ingrediente 1:</label>
+                <input type="checkbox" id="Ingredientes1" name="Ingredientes1" value="Jamon York">Jamón York<imput/>
+            </div>
+            <div id="block3">
+                <label for="ing2">Ingrediente 2:</label>
+                <input type="checkbox" id="Ingredientes2" name="Ingredientes2" value="Champinones">Champinones<imput/>
+            </div>
+            <div id="block3">
+                <label for="ing3">Ingrediente 3:</label>
+                <input type="checkbox" id="Ingredientes3" name="Ingredientes3" value="Pepperoni">Pepperoni<imput/>
+            </div>
+            <div id="block3">
+                <label for="ing4">Ingrediente 4:</label>
+                <input type="checkbox" id="Ingredientes4" name="Ingredientes4" value="Aceitunas">Aceitunas<imput/>
+            </div>
+            </div>
+
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+
+</html>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+
