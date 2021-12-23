@@ -16,24 +16,24 @@
         <div id="datos-cliente">
             <h2>Datos del cliente</h2>
                 <div class="block1">
-                    <label onclick="console.log('lfname');" id="fname" for="fname">Nombre:</label>
+                    <label for="ifname" id="fname" onclick="console.log('lfname');">Nombre:</label>
                     <input type="text" id="ifname" name="ifname" value="">
                 </div>
                 <div class="block1">
-                    <label onclick="console.log('llname');" id="lname" for="lname">Apellidos:</label>
+                    <label for="ilname" id="lname" onclick="console.log('llname');">Apellidos:</label>
                     <input type="text" id="ilname" name="ilname" value="">
                 </div>
                 <div class="block1">
-                    <label id="ldate">Fecha de nacimiento:</label>
-                    <input type="date" name="idate" value="">
+                    <label for="idate" id="ldate">Fecha de nacimiento:</label>
+                    <input type="date" id="idate" name="idate" value="">
                 </div>
                 <div class="block1">
-                    <label id="ltel">Numero de teléfono:</label>
-                    <input type="tel" name="itel" value="">
+                    <label for="itel" id="ltel">Numero de teléfono:</label>
+                    <input type="tel" id="itel" name="itel" value="">
                 </div>
                 <div id="class">
-                    <label id="laddress">Dirección Postal:</label>
-                    <input type="text" name="iaddress" value="">
+                    <label for="iaddress" id="laddress">Dirección Postal:</label>
+                    <input type="text" id="iaddress" name="iaddress" value="">
                 </div>
         </div>
             
@@ -49,24 +49,22 @@
             </div>
             
             <div class="block3">
-                <label for="ing1">Ingrediente 1:</label>
-                <input type="checkbox" id="Ingredientes1" name="Ingredientes1" value="Jamon York">Jamón York>
+                <label for="ingredientes1" id="lblingredientes1">Ingrediente 1:</label>
+                <input type="checkbox" id="ingredientes1" name="ingredientes1" value="Jamon York">Jamón York>
             </div>
             <div class="block3">
-                <label for="ing2">Ingrediente 2:</label>
-                <input type="checkbox" id="Ingredientes2" name="Ingredientes2" value="Champinones">Champinones>
+                <label for="ingredientes2" id="lblingredientes2">Ingrediente 2:</label>
+                <input type="checkbox" id="Ingredientes2" name="ingredientes2" value="Champinones">Champinones>
             </div>
             <div class="block3">
-                <label for="ing3">Ingrediente 3:</label>
-                <input type="checkbox" id="Ingredientes3" name="Ingredientes3" value="Pepperoni">Pepperoni>
+                <label for="ingredientes3" id="lblingredientes3">Ingrediente 3:</label>
+                <input type="checkbox" id="ingredientes3" name="ingredientes3" value="Pepperoni">Pepperoni>
             </div>
             <div class="block3">
-                <label for="ing4">Ingrediente 4:</label>
-                <input type="checkbox" id="Ingredientes4" name="Ingredientes4" value="Aceitunas">Aceitunas>
+                <label for="ingredientes4" id="lblingredientes4">Ingrediente 4:</label>
+                <input type="checkbox" id="ingredientes4" name="ingredientes4" value="Aceitunas">Aceitunas>
             </div>
             </div>
-
-        </div>
 
         <button type="submit">Enviar</button>
 
@@ -75,5 +73,3 @@
 
 </html>
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/script.js"></script>
-
