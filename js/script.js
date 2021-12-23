@@ -9,3 +9,18 @@ $(document).ready(function(){
     });
 
 });
+
+$("#tamano").on('change', function() {
+ console.log(this.value);
+ // Aqui va la llamada AJAX con JQuery
+    
+    $.ajax({
+        type: "POST",
+        url: "/checksize",
+        success: function (result) {
+        $("tamaño").text(result);
+        }
+        });
+
+    
+});
